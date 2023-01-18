@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "ba043617-67e2-46b2-9de5-65eba5ca44d8",
+		"name": "PowerMeterDesafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Medidor",
+			"item": [
+				{
+					"name": "Get List Medidor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medidor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Medidor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"llave_identificadora\": \"QWERTY456\",\n    \"nombre\": \"NOMBRE2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/medidores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medidor Maximo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores/1/maximo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores",
+								"1",
+								"maximo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medidor Minimo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores/1/minimo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores",
+								"1",
+								"minimo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medidor Total",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores/1/total",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores",
+								"1",
+								"total"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medidor Promedio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/medidores/1/promedio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"medidores",
+								"1",
+								"promedio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicion",
+			"item": [
+				{
+					"name": "Get List Medicion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mediciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mediciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Retrieve Medicion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mediciones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mediciones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Medicion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"medidor\": 1,\n    \"fecha_hora\": \"2023-11-10 22:12:56\",\n    \"consumo_registrado\": \"155\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mediciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mediciones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
