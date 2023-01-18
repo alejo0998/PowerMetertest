@@ -8,14 +8,14 @@ Ejercicio 1.
 
 Subi una collection postman, con los endpoints.
 Actualmente existen estos endpoints
-'api/medidores' -> GET (list), POST
-'api/medidores/<int:pk>' -> GET
-'api/medidores/<int:pk>/maximo' -> GET
-'api/medidores/<int:pk>/minimo' -> GET
-'api/medidores/<int:pk>/total' -> GET
-'api/medidores/<int:pk>/promedio' -> GET
-'api/mediciones/' -> GET (list), POST
-'api/mediciones/<int:pk>' -> GET
+1) 'api/medidores' -> GET (list), POST
+2) 'api/medidores/<int:pk>' -> GET
+3) 'api/medidores/<int:pk>/maximo' -> GET
+4) 'api/medidores/<int:pk>/minimo' -> GET
+5) 'api/medidores/<int:pk>/total' -> GET
+6) 'api/medidores/<int:pk>/promedio' -> GET
+7) 'api/mediciones/' -> GET (list), POST
+8) 'api/mediciones/<int:pk>' -> GET
  
  Que resuelven lo solicitado en el ejercicio.
  Respecto a decisiones de diseño, al ser simplificado, no incorpore autenticacion, tambien si no seria un dominio simplificado, 
